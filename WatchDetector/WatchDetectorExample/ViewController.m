@@ -7,12 +7,19 @@
 //
 
 #import "ViewController.h"
+#import <WatchDetector/WatchDetector.h>
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
 @end
 
 @implementation ViewController
+
+- (IBAction)detectWatch {
+    _infoLabel.text = [DetectWatch watchInfo];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

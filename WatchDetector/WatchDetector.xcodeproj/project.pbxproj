@@ -16,10 +16,9 @@
 		0AF2C67F1CE65DEC004BDB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2C67D1CE65DEC004BDB0A /* Main.storyboard */; };
 		0AF2C6811CE65DEC004BDB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2C6801CE65DEC004BDB0A /* Assets.xcassets */; };
 		0AF2C6841CE65DEC004BDB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2C6821CE65DEC004BDB0A /* LaunchScreen.storyboard */; };
-		0AF2C68F1CE65DED004BDB0A /* WatchDetectorExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2C68E1CE65DED004BDB0A /* WatchDetectorExampleTests.m */; };
-		0AF2C69A1CE65DED004BDB0A /* WatchDetectorExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2C6991CE65DED004BDB0A /* WatchDetectorExampleUITests.m */; };
 		0AF2C6A71CE65ED6004BDB0A /* DetectWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF2C6A51CE65ED6004BDB0A /* DetectWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AF2C6A81CE65ED6004BDB0A /* DetectWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2C6A61CE65ED6004BDB0A /* DetectWatch.m */; };
+		0AF2C6AB1CE66280004BDB0A /* WatchDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF2C6541CE65DBA004BDB0A /* WatchDetector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +29,12 @@
 			remoteGlobalIDString = 0AF2C6531CE65DBA004BDB0A;
 			remoteInfo = WatchDetector;
 		};
-		0AF2C68B1CE65DED004BDB0A /* PBXContainerItemProxy */ = {
+		0AF2C6A91CE66279004BDB0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0AF2C64B1CE65DB9004BDB0A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0AF2C6711CE65DEC004BDB0A;
-			remoteInfo = WatchDetectorExample;
-		};
-		0AF2C6961CE65DED004BDB0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AF2C64B1CE65DB9004BDB0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AF2C6711CE65DEC004BDB0A;
-			remoteInfo = WatchDetectorExample;
+			remoteGlobalIDString = 0AF2C6531CE65DBA004BDB0A;
+			remoteInfo = WatchDetector;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,12 +55,6 @@
 		0AF2C6801CE65DEC004BDB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF2C6831CE65DEC004BDB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF2C6851CE65DEC004BDB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF2C68A1CE65DED004BDB0A /* WatchDetectorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchDetectorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AF2C68E1CE65DED004BDB0A /* WatchDetectorExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDetectorExampleTests.m; sourceTree = "<group>"; };
-		0AF2C6901CE65DED004BDB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF2C6951CE65DED004BDB0A /* WatchDetectorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchDetectorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AF2C6991CE65DED004BDB0A /* WatchDetectorExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDetectorExampleUITests.m; sourceTree = "<group>"; };
-		0AF2C69B1CE65DED004BDB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF2C6A51CE65ED6004BDB0A /* DetectWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectWatch.h; sourceTree = "<group>"; };
 		0AF2C6A61CE65ED6004BDB0A /* DetectWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectWatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,20 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AF2C6871CE65DED004BDB0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AF2C6921CE65DED004BDB0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0AF2C6AB1CE66280004BDB0A /* WatchDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +92,6 @@
 				0AF2C6561CE65DBA004BDB0A /* WatchDetector */,
 				0AF2C6621CE65DBA004BDB0A /* WatchDetectorTests */,
 				0AF2C6731CE65DEC004BDB0A /* WatchDetectorExample */,
-				0AF2C68D1CE65DED004BDB0A /* WatchDetectorExampleTests */,
-				0AF2C6981CE65DED004BDB0A /* WatchDetectorExampleUITests */,
 				0AF2C6551CE65DBA004BDB0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,8 +102,6 @@
 				0AF2C6541CE65DBA004BDB0A /* WatchDetector.framework */,
 				0AF2C65E1CE65DBA004BDB0A /* WatchDetectorTests.xctest */,
 				0AF2C6721CE65DEC004BDB0A /* WatchDetectorExample.app */,
-				0AF2C68A1CE65DED004BDB0A /* WatchDetectorExampleTests.xctest */,
-				0AF2C6951CE65DED004BDB0A /* WatchDetectorExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,24 +148,6 @@
 				0AF2C6751CE65DEC004BDB0A /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0AF2C68D1CE65DED004BDB0A /* WatchDetectorExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				0AF2C68E1CE65DED004BDB0A /* WatchDetectorExampleTests.m */,
-				0AF2C6901CE65DED004BDB0A /* Info.plist */,
-			);
-			path = WatchDetectorExampleTests;
-			sourceTree = "<group>";
-		};
-		0AF2C6981CE65DED004BDB0A /* WatchDetectorExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0AF2C6991CE65DED004BDB0A /* WatchDetectorExampleUITests.m */,
-				0AF2C69B1CE65DED004BDB0A /* Info.plist */,
-			);
-			path = WatchDetectorExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,47 +212,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				0AF2C6AA1CE66279004BDB0A /* PBXTargetDependency */,
 			);
 			name = WatchDetectorExample;
 			productName = WatchDetectorExample;
 			productReference = 0AF2C6721CE65DEC004BDB0A /* WatchDetectorExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0AF2C6891CE65DED004BDB0A /* WatchDetectorExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AF2C69F1CE65DED004BDB0A /* Build configuration list for PBXNativeTarget "WatchDetectorExampleTests" */;
-			buildPhases = (
-				0AF2C6861CE65DED004BDB0A /* Sources */,
-				0AF2C6871CE65DED004BDB0A /* Frameworks */,
-				0AF2C6881CE65DED004BDB0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AF2C68C1CE65DED004BDB0A /* PBXTargetDependency */,
-			);
-			name = WatchDetectorExampleTests;
-			productName = WatchDetectorExampleTests;
-			productReference = 0AF2C68A1CE65DED004BDB0A /* WatchDetectorExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0AF2C6941CE65DED004BDB0A /* WatchDetectorExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AF2C6A21CE65DED004BDB0A /* Build configuration list for PBXNativeTarget "WatchDetectorExampleUITests" */;
-			buildPhases = (
-				0AF2C6911CE65DED004BDB0A /* Sources */,
-				0AF2C6921CE65DED004BDB0A /* Frameworks */,
-				0AF2C6931CE65DED004BDB0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AF2C6971CE65DED004BDB0A /* PBXTargetDependency */,
-			);
-			name = WatchDetectorExampleUITests;
-			productName = WatchDetectorExampleUITests;
-			productReference = 0AF2C6951CE65DED004BDB0A /* WatchDetectorExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -319,14 +235,6 @@
 					};
 					0AF2C6711CE65DEC004BDB0A = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					0AF2C6891CE65DED004BDB0A = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 0AF2C6711CE65DEC004BDB0A;
-					};
-					0AF2C6941CE65DED004BDB0A = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 0AF2C6711CE65DEC004BDB0A;
 					};
 				};
 			};
@@ -346,8 +254,6 @@
 				0AF2C6531CE65DBA004BDB0A /* WatchDetector */,
 				0AF2C65D1CE65DBA004BDB0A /* WatchDetectorTests */,
 				0AF2C6711CE65DEC004BDB0A /* WatchDetectorExample */,
-				0AF2C6891CE65DED004BDB0A /* WatchDetectorExampleTests */,
-				0AF2C6941CE65DED004BDB0A /* WatchDetectorExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,20 +280,6 @@
 				0AF2C6841CE65DEC004BDB0A /* LaunchScreen.storyboard in Resources */,
 				0AF2C6811CE65DEC004BDB0A /* Assets.xcassets in Resources */,
 				0AF2C67F1CE65DEC004BDB0A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AF2C6881CE65DED004BDB0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AF2C6931CE65DED004BDB0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,22 +312,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AF2C6861CE65DED004BDB0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AF2C68F1CE65DED004BDB0A /* WatchDetectorExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AF2C6911CE65DED004BDB0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AF2C69A1CE65DED004BDB0A /* WatchDetectorExampleUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -444,15 +320,10 @@
 			target = 0AF2C6531CE65DBA004BDB0A /* WatchDetector */;
 			targetProxy = 0AF2C6601CE65DBA004BDB0A /* PBXContainerItemProxy */;
 		};
-		0AF2C68C1CE65DED004BDB0A /* PBXTargetDependency */ = {
+		0AF2C6AA1CE66279004BDB0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AF2C6711CE65DEC004BDB0A /* WatchDetectorExample */;
-			targetProxy = 0AF2C68B1CE65DED004BDB0A /* PBXContainerItemProxy */;
-		};
-		0AF2C6971CE65DED004BDB0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AF2C6711CE65DEC004BDB0A /* WatchDetectorExample */;
-			targetProxy = 0AF2C6961CE65DED004BDB0A /* PBXContainerItemProxy */;
+			target = 0AF2C6531CE65DBA004BDB0A /* WatchDetector */;
+			targetProxy = 0AF2C6A91CE66279004BDB0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -640,52 +511,6 @@
 			};
 			name = Release;
 		};
-		0AF2C6A01CE65DED004BDB0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = WatchDetectorExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarzoza.WatchDetectorExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchDetectorExample.app/WatchDetectorExample";
-			};
-			name = Debug;
-		};
-		0AF2C6A11CE65DED004BDB0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = WatchDetectorExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarzoza.WatchDetectorExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchDetectorExample.app/WatchDetectorExample";
-			};
-			name = Release;
-		};
-		0AF2C6A31CE65DED004BDB0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = WatchDetectorExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarzoza.WatchDetectorExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = WatchDetectorExample;
-			};
-			name = Debug;
-		};
-		0AF2C6A41CE65DED004BDB0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = WatchDetectorExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zarzoza.WatchDetectorExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = WatchDetectorExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -719,22 +544,6 @@
 			buildConfigurations = (
 				0AF2C69D1CE65DED004BDB0A /* Debug */,
 				0AF2C69E1CE65DED004BDB0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		0AF2C69F1CE65DED004BDB0A /* Build configuration list for PBXNativeTarget "WatchDetectorExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AF2C6A01CE65DED004BDB0A /* Debug */,
-				0AF2C6A11CE65DED004BDB0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		0AF2C6A21CE65DED004BDB0A /* Build configuration list for PBXNativeTarget "WatchDetectorExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AF2C6A31CE65DED004BDB0A /* Debug */,
-				0AF2C6A41CE65DED004BDB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
