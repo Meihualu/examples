@@ -1,9 +1,10 @@
 #import "DetectWatch.h"
+#import <WatchConnectivity/WatchConnectivity.h>
 
 @implementation DetectWatch
 
-+ (NSString *)watchInfo {
-    return @"";
++ (BOOL)watchIsPaired {
+    return [WCSession defaultSession].isPaired;
 }
 
 @end

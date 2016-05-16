@@ -2,6 +2,6 @@
 
 @interface DetectWatch : NSObject
 
-+ (NSString *)watchInfo;
++ (BOOL)watchIsPaired;
 
 @end

@@ -18,7 +18,7 @@
 @implementation ViewController
 
 - (IBAction)detectWatch {
-    _infoLabel.text = [DetectWatch watchInfo];
+    _infoLabel.text = [DetectWatch watchIsPaired] ? @"Watch Paired" : @"No watch paired";
 }
 
 - (void)viewDidLoad {

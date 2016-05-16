@@ -16,7 +16,7 @@
 @implementation WatchDetectorTests
 
 - (void)testGetInfo {
-    XCTAssert([[DetectWatch watchInfo] isEqualToString:@""], @"got bad watch string");
+    XCTAssert([DetectWatch watchIsPaired], @"watch isn't paired");
 }
 
 @end
