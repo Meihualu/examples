@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <WatchDetector/WatchDetector.h>
 #import <WatchConnectivity/WatchConnectivity.h>
 
 @interface ViewController () <WCSessionDelegate>
@@ -19,7 +18,7 @@
 @implementation ViewController
 
 - (IBAction)detectWatch {
-    _infoLabel.text = [DetectWatch watchIsPaired] ? @"Watch Paired" : @"No watch paired";
+    _infoLabel.text = [[WCSession defaultSession] isPaired] ? @"Watch Paired" : @"No watch paired";
 }
 
 - (void)viewDidLoad {
