@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import <WatchDetector/WatchDetector.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 
-@interface ViewController ()
+@interface ViewController () <WCSessionDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 
@@ -23,6 +24,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[WCSession defaultSession] activateSession];
+    
+    if ([WCSession isSupported]) { // check if the device support to handle an Apple Watch
+        WCSession* session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession]; // activate the session
+        
+        if ([session isPaired]) { // Check if the iPhone is paired with the Apple Watch
+            // Do stuff
+        }
+    }
     // Do any additional setup after loading the view, typically from a nib.
 }
 
