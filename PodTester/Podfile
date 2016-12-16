@@ -1,0 +1,2 @@
+target 'PodTester'
+pod 'UnityAds'

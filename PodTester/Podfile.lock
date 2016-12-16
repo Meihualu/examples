@@ -1,0 +1,12 @@
+PODS:
+  - UnityAds (2.0.6)
+
+DEPENDENCIES:
+  - UnityAds
+
+SPEC CHECKSUMS:
+  UnityAds: f9f0a1ddd0b4525ae72feecbe5061ecf6f6effa0
+
+PODFILE CHECKSUM: 7705c5b9c26195178c0124b9a64d85dc41a0c47b
+
+COCOAPODS: 1.1.1
